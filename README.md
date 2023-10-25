@@ -1,4 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Introduction
+This is a web-based restful API as a backend to execute Selenium script.
+
+## Features
+- Use Next.js 13 as a full stack framework.
+- Use TypeScript to improve the code quality and maintainability.
+- Use Context API to manage application state and data (if required)
+- Use React Hooks to handle component state and lifecycle methods.
+- Try to use Next.js features to implement the restful APIs and integrate them with frontend webpage.
+
+## The soultion Demo
+:white_square_button: you can see the local demo of the service 
+[![Watch the video](https://cdn-icons-png.flaticon.com/512/2765/2765116.png)](https://watch.screencastify.com/v/zUtKQ12buwGahn289IZK)
+
+
+## Functionality:
+- Implement a typescript backend with Selenium script that do the following:
+- Open browser and navigates to https://www.google.com o Type in side search bar “testing” word then Click on search button.
+- Implement a GET API that calls the previous selenium script and return success in case the script successfully executed.
+- Implement a simple webpage that contains a button and disabled field, when click the button the API fired and script executed, then the results appear inside the disabled field.
+
+## Hints:
+- use Selenium WebDriver with Chrome, first download ChromeDriver - WebDriver for Chrome. 
+- This can be installed via Homebrew with ``` brew install chromedriver ```
+- manually by downloading, extracting, moving and setting the PATH as follows:
+```bash
+$ cd $HOME/Downloads
+$ wget http://chromedriver.storage.googleapis.com/2.22/chromedriver_mac32.zip
+$ unzip chromedriver_mac32.zip
+$ mkdir -p $HOME/bin
+$ mv chromedriver $HOME/bin
+$ echo "export PATH=$PATH:$HOME/bin" >> $HOME/.bash_profile
+```
+[Source: install and set path to chromedriver on mac or linux
+](http://codrspace.com/rails4sandeep/install-and-set-path-to-chromedriver-on-mac-or-linux/)
 
 ## Getting Started
 
@@ -24,8 +58,8 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [@types/selenium-webdriver](https://www.npmjs.com/package/@types/selenium-webdriver)
+- [selenium-webdriver](https://www.npmjs.com/package/selenium-webdriver)
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
