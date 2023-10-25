@@ -1,0 +1,32 @@
+/* Button style */
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 2rem;
+  float: right;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Input text style */
+.textarea {
+  display: block;
+  width: 99%;
+  float: inline-end;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
